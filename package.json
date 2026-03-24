@@ -1,6 +1,6 @@
 {
   "name": "bloxit",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Bloxit supports some of ROBLOX API endpoints. You can access to basic info about user/group.",
   "main": "index.js",
   "scripts": {
