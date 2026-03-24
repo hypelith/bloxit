@@ -14,10 +14,10 @@ exports.getUserRankInGroupFromID = async function (UserID = Number, GroupID = Nu
 
     let newGroupID = GroupID
 
-    if (!UserID) return { error: true, message: `UserID is undefined.` }
-    if (typeof UserID != "number") return { error: true, message: `UserID should be a Number.` }
+    if (!UserID) return { success: false, message: `UserID is undefined.` }
+    if (typeof UserID != "number") return { success: false, message: `UserID should be a Number.` }
     if (GroupID == Number) newGroupID = undefined
-    if (GroupID && GroupID != Number && typeof GroupID != "number") return { error: true, message: `GroupID should be a Number.` }
+    if (GroupID && GroupID != Number && typeof GroupID != "number") return { success: false, message: `GroupID should be a Number.` }
 
     return await require("./lib/User/getUserRankInGroupFromID.js").run(UserID, newGroupID)
 }
