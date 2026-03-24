@@ -5,8 +5,15 @@ Actually this module is open source.
 
 ## Useable Function List
 
+### User Functions
+
 ```
-getUserInfoFromUsername, getUserRankInGroupFromID, getGroupInfoFromID, getUserInfoFromID
+getUserInfoFromUsername, getUserRankInGroupFromID, getUserInfoFromID
+```
+
+### Group Functions
+```
+getGroupInfoFromID
 ```
 
 ## Functions
